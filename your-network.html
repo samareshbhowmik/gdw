@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Network</title>
+    <link rel="stylesheet" href="network.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Logo" class="logo" style="float: left;">
+        <button onclick="window.location.href='account.html'" style="float: right;">Go Back to Account</button>
+    </header>
+
+    <main>
+        <h2>Your Network</h2>
+        <form id="networkForm">
+            <label for="websiteUrl">Website URL:</label>
+            <input type="url" id="websiteUrl" name="websiteUrl" placeholder="https://example.com">
+            
+            <label for="facebookUrl">Facebook URL:</label>
+            <input type="url" id="facebookUrl" name="facebookUrl" placeholder="https://facebook.com/yourprofile">
+            
+            <label for="twitterUrl">Twitter URL:</label>
+            <input type="url" id="twitterUrl" name="twitterUrl" placeholder="https://twitter.com/yourprofile">
+            
+            <!-- Add more social network fields as needed -->
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year">2024</span> Green Digital World</p>
+    </footer>
+    
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

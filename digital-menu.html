@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Digital Menu</title>
+    <link rel="stylesheet" href="digital-menu.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Company Logo" class="logo">
+        <button onclick="window.location.href='products-services.html'" class="go-back-btn">Back to Products & Services</button>
+    </header>
+
+    <main>
+        <main id="mainContent">
+            <!-- Dynamic content will be loaded here by JavaScript -->
+        </main>
+    
+    
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Green Digital World</p>
+        <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+         </script>
+    </footer>
+
+    <script src="digital-menu.js"></script>
+</body>
+</html>

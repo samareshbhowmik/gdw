@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Services Setup</title>
+    <link rel="stylesheet" href="addmain.css"> <!-- Ensure the CSS file path is correct -->
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.jpeg" alt="Your Logo" class="logo">
+            <div class="business-name">Green Digital World</div>
+        </div>
+    </header>
+    
+    <div class="main-services-section">
+        <h2>Make Your Digital Menu</h2>
+        <input type="text" id="newServiceInput" placeholder="Enter new service name">
+        <button id="addMainServiceButton">Add Main Food/Drinks Category</button>
+
+        <div id="mainServicesList"></div>
+    </div>
+
+    <!-- Sub-item form section -->
+    <div id="subItemForm" style="display:none;">
+        <h3>Add Food/Drinks Items</h3>
+        <input type="text" id="subItemName" placeholder="Enter item name" required>
+        <input type="text" id="subItemPrice" placeholder="Enter price (any currency)">
+        <textarea id="subItemDescription" placeholder="Enter description (optional)"></textarea>
+        <input type="text" id="subItemIngredients" placeholder="Enter ingredients (optional)">
+        <input type="number" id="subItemCalories" placeholder="Enter calories (optional)">
+        <input type="file" id="subItemImage" accept="image/*" required>
+        <button id="submitSubItemButton">Save Item</button>
+        <button id="cancelButton" type="button">Cancel</button>
+    </div>
+
+    <script src="addmain.js"></script> <!-- Ensure the JS file path is correct -->
+</body>
+</html>

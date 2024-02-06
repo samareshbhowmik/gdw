@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products & Services</title>
+    <link rel="stylesheet" href="product-service.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Company Logo" class="logo">
+        <button onclick="window.location.href='account.html'" class="go-back-btn">Back to Account</button>
+    </header>
+
+    <main>
+        <div id="selectBusinessType" class="select-business-type">Select Your Business Type</div>
+        <div id="businessCategories" class="business-categories" style="display: none;">
+            <button class="category-btn" data-category="Restaurant">Restaurant</button>
+            <button class="category-btn" data-category="Retail">Retail</button>
+            <!-- Add more categories as needed -->
+        </div>
+
+        <!-- Confirmation Modal -->
+        <div id="confirmationModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <p>Are you sure you want to select "<span id="selectedCategoryName"></span>"?</p>
+                <button id="confirmSelection">Yes</button>
+                <button id="cancelSelection">Cancel</button>
+            </div>
+        </div>
+
+        <!-- Category-specific content will be displayed here based on the selection -->
+        <div id="categoryContent" style="display: none;">
+            <!-- Content like restaurant menu, grocery list, etc. will be dynamically inserted here based on the selected category -->
+        </div>
+
+        <!-- Placeholder for Digital Menu Button -->
+        <div id="digitalMenuButtonContainer" style="display: none; text-align: center; margin-top: 20px;">
+            <button id="makeDigitalMenuBtn">Make Your Restaurant Digital Menu</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Green Digital World</p>
+    </footer>
+
+    <script src="product-service.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business Profile</title>
+    <link rel="stylesheet" href="business-profile.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Logo" class="logo">
+        <a href="account.html" class="back-button">&#x2190; Back to Account</a>
+    </header>
+
+    <main>
+        <h1>Business Profile</h1>
+        <form id="businessProfileForm">
+            <label for="tradingName">Business Name (Trading Name):</label>
+            <input type="text" id="tradingName" name="tradingName" required>
+
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="postcode">Post Code:</label>
+            <input type="text" id="postcode" name="postcode" required>
+
+            <label for="vatNumber">VAT Number:</label>
+            <input type="text" id="vatNumber" name="vatNumber">
+
+            <label for="companyRegNo">Company Registry Number:</label>
+            <input type="text" id="companyRegNo" name="companyRegNo">
+
+            <button type="submit">Save Profile</button>
+        </form>
+    </main>
+    <script src="business-profile.js"></script>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Green Digital World</p>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+           var currentYear = new Date().getFullYear(); // Get the current year
+           document.getElementById('current-year').textContent = currentYear; // Set the current year in the footer
+       });
+       </script>
+    </footer>
+    
+
+    
+</body>
+</html>

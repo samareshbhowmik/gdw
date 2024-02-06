@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business Opening Hours</title>
+    <link rel="stylesheet" href="business-hours.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Company Logo" class="logo">
+        <button onclick="window.location.href='account.html'" class="go-back-btn">Back to Account</button>
+    </header>
+
+    <main>
+        <h2>Business Opening Hours</h2>
+        <form id="openingHoursForm">
+            <div class="day-container">
+                <!-- Dynamic Day Entries -->
+                <!-- Monday -->
+                <div class="day">
+                    <label for="mondaydayOpen">Monday</label>
+                    <input type="time" id="mondayOpen" step="900"> to
+                    <input type="time" id="mondayClose" step="900">
+                    <label class="closed-checkbox">
+                        <input type="checkbox" id="mondayClosed"> Closed
+                    </label>
+                </div>
+
+                    <div class="day">
+                    <label for="tuesdayOpen">Tusedayday</label>
+                    <input type="time" id="tuesdayOpen" step="900"> to
+                    <input type="time" id="tuesdayClose" step="900">
+                    <label class="closed-checkbox">
+                        <input type="checkbox" id="tuesdayClosed"> Closed
+                    </label>
+                </div>
+
+                <div class="day">
+                    <label for="wednesdayOpen">Wednesday</label>
+                    <input type="time" id="wednesdayOpen" step="900"> to
+                    <input type="time" id="wednesdayClose" step="900">
+                    <label class="closed-checkbox">
+                        <input type="checkbox" id="wednesdayClosed"> Closed
+                    </label>
+                </div>
+
+                <div class="day">
+                    <label for="thursdayOpen">Thursday</label>
+                    <input type="time" id="Thursday" step="900"> to
+                    <input type="time" id="thursdayClose" step="900">
+                    <label class="closed-checkbox">
+                        <input type="checkbox" id="thursdayClosed"> Closed
+                    </label>
+                </div>
+
+                <div class="day">
+                    <label for="Firstdayopen">Friday</label>
+                    <input type="time" id="fridayOpen" step="900"> to
+                    <input type="time" id="fridayClose" step="900">
+                    <label class="closed-checkbox">
+                        <input type="checkbox" id="fridayClosed"> Closed
+                    </label>
+                </div>
+
+                <div class="day">
+                    <label for="saturdayOpen">Saturday</label>
+                    <input type="time" id="saturdayOpen" step="900"> to
+                    <input type="time" id="saturdayClose" step="900">
+                    <label class="closed-checkbox">
+                        <input type="checkbox" id="saturdayClosed"> Closed
+                    </label>
+                </div>
+
+                <div class="day">
+                    <label for="sundayOpen">Sunday</label>
+                    <input type="time" id="sundayOpen" step="900"> to
+                    <input type="time" id="sundayClose" step="900">
+                    <label class="closed-checkbox">
+                        <input type="checkbox" id="sundayClosed"> Closed
+                    </label>
+                </div>
+                
+                <!-- Additional days follow the same structure as Monday -->
+
+            </div>
+
+            <div class="special-note">
+                <label for="specialNotes">Special Notes</label>
+                <textarea id="specialNotes" rows="4" placeholder="e.g., Closed on public holidays"></textarea>
+            </div>
+
+            <div class="checkbox-container">
+                <label class="twentyFourHours">
+                    <input type="checkbox" id="twentyFourHours"> 24-Hour Operation
+                </label>
+            </div>
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year">2024</span> Green Digital World</p>
+    </footer>
+
+    <script src="business-hours.js"></script>
+</body>
+</html>

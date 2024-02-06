@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.go-back-btn {
+    padding: 5px 15px;
+    background-color: #0069d9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-btn:hover {
+    background-color: #0056b3;
+}
+.category-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-input {
+    flex-grow: 1;
+    margin-right: 10px;
+    font-size: 1.2em; /* Makes the text inside the input bigger */
+}
+
+.edit-btn, .add-item-btn {
+    margin-left: 5px;
+    background-color: #007bff; /* Bright color for visibility */
+    color: white; /* White text for better contrast */
+    border: none; /* Remove default border */
+    padding: 5px 10px; /* Add some padding for better touch area */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    border-radius: 5px; /* Optional: Adds rounded corners for a modern look */
+}
+
+.edit-btn:disabled, .add-item-btn:disabled {
+    background-color: #cccccc; /* Light grey color to indicate the button is disabled */
+    color: #666666; /* Darker grey for the text to indicate it's disabled */
+    cursor: not-allowed; /* Change cursor to indicate the button is not clickable */
+}
+
+.add-btn {
+    /* Styles for the add button, similar to edit and add-item buttons for consistency */
+    background-color: #28a745; /* Different color to distinguish from edit/add-item buttons */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px; /* Ensure consistent spacing */
+}
+
+.add-btn:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 10px;
+    }
+
+    .logo, .go-back-btn {
+        margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 20px);
+    }
+}

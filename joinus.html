@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join Green Digital World</title>
+    <link rel="stylesheet" href="joinus.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Your Logo" class="logo">
+        <div class="business-name">Green Digital World</div>
+        <a href="index.html" class="back-arrow">&#x2190; Back</a>
+    </header>
+
+    <form id="joinForm">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="email" placeholder="Email" required>
+        <input type="email" placeholder="Confirm Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <label>
+            <input type="checkbox" required> I agree to the Data Protection T&C
+        </label>
+        <a href="terms.html">T&C</a>
+        <button type="submit">Join Now</button>
+    </form>
+
+    <!-- OTP Verification Modal -->
+    <div id="otpModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Please enter your 6-digit code. Check your email.</p>
+            <div id="otpInputs">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" required>
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" required>
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" required>
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" required>
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" required>
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" required>
+            </div>
+            <button id="otpSubmit">Submit</button>
+            <p id="resendOTP">Didn't receive a code? <a href="#">Resend</a></p>
+        </div>
+    </div> 
+
+    <script src="joinus.js"></script>
+</body>
+</html>

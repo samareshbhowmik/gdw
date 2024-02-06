@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Digital World</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.jpeg" alt="Your Logo" class="logo">
+            <!-- This is where the animated title will be injected by JavaScript -->
+            <div class="business-name" id="business-name"></div>
+            <div class="menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#products">Our Product</a></li>
+                <li><a href="#pricing">Our Price</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="campaign">
+        <p>Come and Join our Green Campaign</p>
+        <button id="joinUsButton" onclick="location.href='joinus.html'">Join With Us</button>
+    </section>
+
+    <section id="slideshow">
+        <div class="slideshow-container">
+            <!-- Slides will be added here dynamically through JavaScript -->
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </section>
+    <!-- Product Description Section -->
+<section id="product-description">
+    <h2>Our Products</h2>
+    <!-- Keep this section empty as per your request, or add content here -->
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <p>For any information about our product and service, please contact us:</p>
+    <button id="contactUsButton">Contact Us</button>
+
+    <!-- Contact Form Modal -->
+    <div id="contactFormModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <form id="contactForm">
+                <h2>Contact Us</h2>
+                <!-- Form fields -->
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>Contact Us: <a href="mailto:info@greenbusinesstools.net">info@greenbusinesstools.net</a></p>
+        <p>Address: 246 Archway Road<br>Highgate<br>London<br>N6 5AX<br>United Kingdom</p>
+        <p>&copy; <span id="current-year"></span> Green Digital World</p>
+    </div>
+</footer>
+
+    
+    <!-- Rest of your page content -->
+
+    <script>
+        document.querySelector('.menu-button').addEventListener('click', function() {
+            document.querySelector('.menu').style.display = (document.querySelector('.menu').style.display === 'block' ? 'none' : 'block');
+        });
+    </script>
+    <!-- The JavaScript for the animated title should be in index.js -->
+ 
+</body>
+</html>

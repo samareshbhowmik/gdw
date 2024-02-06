@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Item Management</title>
+    <link rel="stylesheet" href="additems.css"> <!-- Create and link your CSS file -->
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Company Logo" class="logo">
+        <button onclick="window.location.href='digital-menu.html'" class="go-back-btn">Back to Digital Menu</button>
+       
+    </header>
+
+    <main>
+        <h1>Add Yor Food Items</h1>
+        <button id="showFormBtn">Add New Food Item</button> <!-- Trigger button -->
+        <div id="formContainer" style="display: none;"> <!-- Form container -->  
+        
+        <form id="foodItemForm">
+            <label for="imageFile">Image File:</label>
+<input type="file" id="imageFile" name="imageFile" accept="image/*" required>
+
+            <label for="foodName">Food Name:</label>
+            <input type="text" id="foodName" name="foodName" placeholder="Food name" required>
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" placeholder="Price" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Description" required></textarea>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" placeholder="Ingredients" required></textarea>
+
+            <label for="calories">Calories:</label>
+            <input type="number" id="calories" name="calories" placeholder="Calories" required>
+
+            
+
+            <button type="submit">Add To your list</button>
+        </form>
+    </div>
+    <div id="foodItemsList">
+        <!-- Saved food items will be displayed here -->
+    </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Green Digital World</p>
+        <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+    <script src="additems.js"></script> <!-- Create and link your JS file -->
+</body>
+</html>
